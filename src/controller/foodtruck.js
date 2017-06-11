@@ -33,7 +33,7 @@ export default({ config, db }) => {
     newFoodTruck.name = req.body.name;
     newFoodTruck.foodtype = req.body.foodtype;
     newFoodTruck.avgcost = req.body.avgcost;
-    newFoodTruck.geometry.coordinates = req.body.geometry.coordinates;
+    // newFoodTruck.geometry.coordinates = req.body.geometry.coordinates;
 
     newFoodTruck.save(function(err) {
       if (err) {
